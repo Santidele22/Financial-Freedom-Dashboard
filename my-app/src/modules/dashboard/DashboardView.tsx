@@ -18,9 +18,9 @@ export default function DashboardView({ profile, fixedExpenses, debts }: Dashboa
         <div className="p-6 space-y-6 text-white bg-black min-h-screen">
             <DashboardHeader />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <AnalyticsSummary fixedExpenses={fixedExpenses} debts={debts} />
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <IncomeCard monthlyIncome={profile?.monthly_income || 0} />
+                <AnalyticsSummary fixedExpenses={fixedExpenses} debts={debts} />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
