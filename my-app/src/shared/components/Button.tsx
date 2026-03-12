@@ -41,10 +41,11 @@ const buttonVariants = cva(
 );
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
-    text: string;
+    text?: string;
     small?: boolean;
     medium?: boolean;
     large?: boolean;
+    children?: React.ReactNode;
 }
 
 export default function Button({
@@ -56,6 +57,7 @@ export default function Button({
     medium,
     large,
     className,
+    children,
     ...props
 }: ButtonProps) {
     return (
@@ -63,7 +65,7 @@ export default function Button({
             className={buttonVariants({ intent, importance, status, small, medium, large, className })}
             {...props}
         >
-            {text}
+            {children || text}
         </button>
     );
 }
