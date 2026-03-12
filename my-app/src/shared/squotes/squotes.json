@@ -1,0 +1,162 @@
+[
+    {
+        "nombre": "Benjamin Franklin",
+        "frase": "Cuidado con los pequeños gastos; una pequeña fuga puede hundir un gran barco."
+    },
+    {
+        "nombre": "Benjamin Franklin",
+        "frase": "Un centavo ahorrado es un centavo ganado."
+    },
+    {
+        "nombre": "John Maynard Keynes",
+        "frase": "La dificultad no reside tanto en desarrollar nuevas ideas como en escapar de las antiguas."
+    },
+    {
+        "nombre": "Warren Buffett",
+        "frase": "No ahorres lo que te queda después de gastar; gasta lo que te queda después de ahorrar."
+    },
+    {
+        "nombre": "Charlie Munger",
+        "frase": "La primera regla para acumular riqueza es no interrumpir innecesariamente el interés compuesto."
+    },
+    {
+        "nombre": "Adam Smith",
+        "frase": "La frugalidad, y no la industria, es la causa inmediata del aumento del capital."
+    },
+    {
+        "nombre": "David Ricardo",
+        "frase": "Los gastos siempre tienden a crecer hasta alcanzar los ingresos."
+    },
+    {
+        "nombre": "John D. Rockefeller",
+        "frase": "No tengas miedo de renunciar a lo bueno para ir a por lo grandioso."
+    },
+    {
+        "nombre": "Andrew Carnegie",
+        "frase": "El hombre que muere rico muere deshonrado."
+    },
+    {
+        "nombre": "Peter Drucker",
+        "frase": "Lo que se mide, se mejora."
+    },
+    {
+        "nombre": "Aristóteles",
+        "frase": "La riqueza consiste más en el uso que en la posesión."
+    },
+    {
+        "nombre": "Séneca",
+        "frase": "No es pobre el que tiene poco, sino el que desea más."
+    },
+    {
+        "nombre": "Epicteto",
+        "frase": "La riqueza no consiste en tener grandes posesiones, sino en tener pocas necesidades."
+    },
+    {
+        "nombre": "Marco Aurelio",
+        "frase": "Muy poco se necesita para una vida feliz."
+    },
+    {
+        "nombre": "Confucio",
+        "frase": "El hombre superior entiende lo que es correcto; el inferior entiende lo que es rentable."
+    },
+    {
+        "nombre": "Lao Tse",
+        "frase": "Quien sabe que suficiente es suficiente siempre tendrá suficiente."
+    },
+    {
+        "nombre": "Voltaire",
+        "frase": "El trabajo aleja de nosotros tres grandes males: el aburrimiento, el vicio y la necesidad."
+    },
+    {
+        "nombre": "Francis Bacon",
+        "frase": "El dinero es un buen sirviente, pero un mal amo."
+    },
+    {
+        "nombre": "Michel de Montaigne",
+        "frase": "La avaricia es el deseo de poseer sin disfrutar."
+    },
+    {
+        "nombre": "Baltasar Gracián",
+        "frase": "No gastes más de lo que tienes ni prometas más de lo que puedes."
+    },
+    {
+        "nombre": "Henry Ford",
+        "frase": "La riqueza no es tener dinero; es tener la capacidad de producir."
+    },
+    {
+        "nombre": "Nikola Tesla",
+        "frase": "El presente es de ellos, pero el futuro por el que trabajo es mío."
+    },
+    {
+        "nombre": "Friedrich Hayek",
+        "frase": "El dinero es una de las mayores herramientas de libertad jamás inventadas."
+    },
+    {
+        "nombre": "Milton Friedman",
+        "frase": "Nadie gasta el dinero de otro con el mismo cuidado con el que gasta el propio."
+    },
+    {
+        "nombre": "Thomas Sowell",
+        "frase": "No hay soluciones perfectas, solo compensaciones."
+    },
+    {
+        "nombre": "George Clason",
+        "frase": "Una parte de todo lo que ganas es tuya para conservar."
+    },
+    {
+        "nombre": "Napoleon Hill",
+        "frase": "El punto de partida de todo logro es el deseo."
+    },
+    {
+        "nombre": "Samuel Smiles",
+        "frase": "La riqueza duradera proviene de hábitos de frugalidad."
+    },
+    {
+        "nombre": "Benjamin Disraeli",
+        "frase": "La economía es la madre de la prosperidad."
+    },
+    {
+        "nombre": "Ralph Waldo Emerson",
+        "frase": "El dinero suele costar demasiado."
+    },
+    {
+        "nombre": "Henry David Thoreau",
+        "frase": "La riqueza de un hombre se mide por las cosas de las que puede prescindir."
+    },
+    {
+        "nombre": "Johann Wolfgang von Goethe",
+        "frase": "El que no piensa en el mañana nunca tendrá riqueza."
+    },
+    {
+        "nombre": "Miguel de Cervantes",
+        "frase": "Más vale un toma que dos te daré."
+    },
+    {
+        "nombre": "Antonio Machado",
+        "frase": "Solo el necio confunde valor y precio."
+    },
+    {
+        "nombre": "José Martí",
+        "frase": "La riqueza es honrada cuando se crea con trabajo."
+    },
+    {
+        "nombre": "Carlos Pellegrini",
+        "frase": "La estabilidad financiera es la base de la estabilidad política."
+    },
+    {
+        "nombre": "Vladimir Lenin",
+        "frase": "La confianza es buena, el control es mejor."
+    },
+    {
+        "nombre": "Peter Lynch",
+        "frase": "Invierte en lo que conoces."
+    },
+    {
+        "nombre": "Ray Dalio",
+        "frase": "Quien vive endeudado está obligado a trabajar para otros."
+    },
+    {
+        "nombre": "John Stuart Mill",
+        "frase": "La acumulación de capital depende de la abstinencia del consumo."
+    }
+]
