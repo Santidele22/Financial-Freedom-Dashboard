@@ -37,7 +37,7 @@ export default function RithSide() {
 
                     <div className="text-center space-y-4 max-w-sm">
                         <h2 className="text-4xl font-bold tracking-tight text-white">
-                            Bienvenido a Libertad
+                            Bienvenido a Kecanut
                         </h2>
                         <p className="text-zinc-400 text-lg leading-relaxed">
                             Organiza tus finanzas, elimina tus deudas y alcanza la paz mental que mereces.

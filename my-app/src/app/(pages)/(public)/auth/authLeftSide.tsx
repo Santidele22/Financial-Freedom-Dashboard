@@ -27,7 +27,7 @@ export default function LeftSide() {
                 <div className="h-10 w-10 bg-black rounded-xl flex items-center justify-center text-white shadow-lg">
                     <Shapes size={24} strokeWidth={2.5} />
                 </div>
-                <span className="text-xl font-bold tracking-tight text-zinc-900">Libertad</span>
+                <span className="text-xl font-bold tracking-tight text-zinc-900">Kecanut</span>
             </div>
 
             <div className="space-y-8">
