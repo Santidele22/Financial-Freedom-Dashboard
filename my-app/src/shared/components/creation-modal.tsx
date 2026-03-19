@@ -26,34 +26,35 @@ export function CreationModal({ type, isOpen, onClose, initialData }: CreationMo
 
     const titles = {
         income: "Actualizar Ingresos Mensuales",
-        debt: "Agregar Nueva Deuda",
+        debt: initialData?.id ? "Editar Deuda" : "Agregar Nueva Deuda",
         expense: initialData?.id ? "Editar Gasto Fijo" : "Agregar Gasto Fijo"
     }
 
     return (
-        <Dialog 
-            isOpen={isOpen} 
-            onClose={onClose} 
+        <Dialog
+            isOpen={isOpen}
+            onClose={onClose}
             title={type ? titles[type] : ""}
         >
             {type === "income" && (
-                <IncomeForm 
-                    initialAmount={initialData?.monthlyIncome} 
-                    onSuccess={handleSuccess} 
-                    onCancel={onClose} 
+                <IncomeForm
+                    initialAmount={initialData?.monthlyIncome}
+                    onSuccess={handleSuccess}
+                    onCancel={onClose}
                 />
             )}
             {type === "debt" && (
-                <DebtForm 
-                    onSuccess={handleSuccess} 
-                    onCancel={onClose} 
+                <DebtForm
+                    initialAmount={initialData}
+                    onSuccess={handleSuccess}
+                    onCancel={onClose}
                 />
             )}
             {type === "expense" && (
-                <ExpenseForm 
+                <ExpenseForm
                     initialData={initialData}
-                    onSuccess={handleSuccess} 
-                    onCancel={onClose} 
+                    onSuccess={handleSuccess}
+                    onCancel={onClose}
                 />
             )}
         </Dialog>

@@ -1,9 +1,7 @@
-// import { createClient } from "@/src/shared/lib/supabase/server";
+import { createClient } from "@/src/shared/lib/supabase/server";
 import DashboardView from "./DashboardView";
-import { MOCK_PROFILE, MOCK_FIXED_EXPENSES, MOCK_DEBTS } from "@/src/shared/mocks/database";
 
 export default async function DashboardContainer() {
-    /*
     const supabase = await createClient();
 
     // Fetch user data
@@ -24,12 +22,8 @@ export default async function DashboardContainer() {
     const profile = profileRes.data || null;
     const fixedExpenses = fixedRes.data || [];
     const debts = debtsRes.data || [];
-    */
 
-    // Using Mock Data
-    const profile = MOCK_PROFILE;
-    const fixedExpenses = MOCK_FIXED_EXPENSES;
-    const debts = MOCK_DEBTS;
+
 
     return (
         <DashboardView

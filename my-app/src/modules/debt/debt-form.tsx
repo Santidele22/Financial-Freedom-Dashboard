@@ -4,11 +4,12 @@ import { useState } from "react"
 import { createClient } from "@/src/shared/lib/supabase/client"
 
 interface DebtFormProps {
+    initialAmount?: number;
     onSuccess: () => void
     onCancel: () => void
 }
 
-export default function DebtForm({ onSuccess, onCancel }: DebtFormProps) {
+export default function DebtForm({ initialAmount, onSuccess, onCancel }: DebtFormProps) {
     const [loading, setLoading] = useState(false)
     const [formData, setFormData] = useState({
         name: "",

@@ -17,7 +17,7 @@ export default function IncomeForm({ initialAmount = 0, onSuccess, onCancel }: I
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setLoading(true)
-        
+
         try {
             const { data: { user } } = await supabase.auth.getUser()
             if (!user) throw new Error("No user found")

@@ -8,7 +8,7 @@ import IncomeCard from "../income/income-card";
 import ExpensesList from "../expenses/expenses-list";
 import DebtsList from "../debt/debts-list";
 import { CreationModal, ModalType } from "@/src/shared/components/creation-modal";
-import { Plus } from "lucide-react";
+import { calculateSafeToSpend } from "@/src/shared/lib/supabase/finance-logic";
 
 interface DashboardViewProps {
     profile: UserProfile | null;
@@ -23,6 +23,12 @@ export default function DashboardView({ profile, fixedExpenses, debts }: Dashboa
         initialData: null
     });
 
+    const { safeToSpend } = calculateSafeToSpend(
+        profile?.monthly_income || 0,
+        fixedExpenses,
+        debts
+    );
+
     const openModal = (type: ModalType, initialData?: any) => setModalConfig({ type, isOpen: true, initialData });
     const closeModal = () => setModalConfig({ ...modalConfig, isOpen: false, initialData: null });
 
@@ -36,7 +42,8 @@ export default function DashboardView({ profile, fixedExpenses, debts }: Dashboa
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <IncomeCard
-                    monthlyIncome={profile?.monthly_income || 0}
+                    monthlyIncome={safeToSpend}
+                    title="Disponible para gastar"
                     onAddIncome={() => openModal('income')}
                     onAddExpense={() => openModal('expense')}
                     onAddDebt={() => openModal('debt')}
@@ -48,7 +55,11 @@ export default function DashboardView({ profile, fixedExpenses, debts }: Dashboa
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
                 <section className="space-y-4">
-                    <DebtsList debts={debts} />
+                    <DebtsList
+                        debts={debts}
+                        onEdit={(debt) => openModal('debt', debt)}
+                        onDeleteSuccess={() => window.location.reload()}
+                    />
                 </section>
 
                 <section className="space-y-4">

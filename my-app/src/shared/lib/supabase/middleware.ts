@@ -30,7 +30,33 @@ export async function updateSession(request: NextRequest) {
   )
 
   // refreshing the auth token
-  await supabase.auth.getUser()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+
+  const isAuthPage = request.nextUrl.pathname.startsWith('/auth')
+  const isDashboardPage = request.nextUrl.pathname.startsWith('/dashboard')
+  const isRootPage = request.nextUrl.pathname === '/'
+
+  if (isRootPage) {
+    const url = request.nextUrl.clone()
+    url.pathname = user ? '/dashboard' : '/auth'
+    return NextResponse.redirect(url)
+  }
+
+  if (!user && isDashboardPage) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/auth'
+    url.searchParams.set('pillin', 'true')
+    return NextResponse.redirect(url)
+  }
+
+  if (user && isAuthPage && !request.nextUrl.pathname.startsWith('/auth/callback')) {
+    // user is logged in, redirect to dashboard
+    const url = request.nextUrl.clone()
+    url.pathname = '/dashboard'
+    return NextResponse.redirect(url)
+  }
 
   return supabaseResponse
 }
